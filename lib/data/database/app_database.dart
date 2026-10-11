@@ -5,14 +5,23 @@ import 'database_key_service.dart';
 
 class AppDatabase {
   static Database? _database;
+  static Database? _testDatabase;
 
   static Future<Database> get database async {
+    if (_testDatabase != null) {
+      return _testDatabase!;
+    }
+
     if (_database != null) {
       return _database!;
     }
 
     _database = await _initDatabase();
     return _database!;
+  }
+
+  static void setDatabaseForTesting(Database? database) {
+    _testDatabase = database;
   }
 
   static Future<Database> _initDatabase() async {
