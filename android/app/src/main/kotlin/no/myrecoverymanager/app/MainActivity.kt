@@ -1,4 +1,4 @@
-package my_recovery_manager.untitled
+package no.myrecoverymanager.app
 
 import io.flutter.embedding.android.FlutterActivity
 

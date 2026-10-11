@@ -43,3 +43,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# CocoaPods
+ios/Pods/
+macos/Pods/
+
+# Xcode user settings
+**/xcuserdata/
+# Android signing
+android/app/*.jks
+android/app/*.keystore
+android/key.properties

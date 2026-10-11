@@ -12,7 +12,6 @@ class WelcomePage extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Bakgrunnsbilde
           SizedBox.expand(
             child: Image.asset(
               'assets/images/frontpagebackground.jpg',
@@ -20,12 +19,10 @@ class WelcomePage extends StatelessWidget {
             ),
           ),
 
-          // Mørkt filter over bildet
           Container(
             color: Colors.black.withValues(alpha: 0.35),
           ),
 
-          // Innhold
           SafeArea(
             child: Padding(
               padding: const EdgeInsets.symmetric(

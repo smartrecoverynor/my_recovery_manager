@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>my_recovery_manager</string>
+	<string>My Recovery Manager</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -53,6 +53,17 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Appen bruker posisjonen din for å vise hvor du befinner deg på kartet.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Appen bruker posisjonen din i bakgrunnen for å varsle deg når du befinner deg i et risikofylt område.</string>
+    <key>NSContactsUsageDescription</key>
+    <string>MRM trenger tilgang til kontaktene dine for å kunne ringe en venn via Panic Button.</string>
+
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+    </array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
